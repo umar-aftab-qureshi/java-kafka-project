@@ -32,9 +32,7 @@ public class ConsumerDemoWithShutDown {
         properties.setProperty("group.id", groupId);
         properties.setProperty("auto.offset.reset", "earliest"); //none --> if don't have group then fail  /earliest --> read from beginning / latest --> only read new messages
 
-        try {
 
-        }
         // create consumer
         KafkaConsumer<String, String> consumer = new KafkaConsumer<>(properties);
 
